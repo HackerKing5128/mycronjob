@@ -6,7 +6,7 @@ export default function startScheduler() {
   
   console.log("⏱ Worker scheduler started");
 
-  cron.schedule("*/10 * * * *", async () => {
+  cron.schedule("*/5 * * * *", async () => {
 
     const websites = await Website.find();
 
