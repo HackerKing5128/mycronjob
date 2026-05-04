@@ -188,7 +188,7 @@ The frontend expects the backend at `http://localhost:3000/api`.
 
 ## 👨‍💻 Author
 
-Built by **Yash Maheshwari**
+Built by **Nakul Saini**
 
 ---
 
