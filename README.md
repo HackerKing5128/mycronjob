@@ -150,6 +150,23 @@ MyCronJob/
 
 ---
 
+## ▶️ Run Locally
+
+1. Start MongoDB locally on `127.0.0.1:27017` or point both services at another MongoDB instance.
+2. Copy `backend/.env.example` to `backend/.env` and fill in `MONGO_URI`, `JWT_SECRET`, and `INTERNAL_SECRET`.
+3. Copy `worker/.env.example` to `worker/.env` and use the same `MONGO_URI` and `INTERNAL_SECRET`, plus your email credentials.
+4. In separate terminals, run:
+
+```bash
+cd backend && npm start
+cd worker && npm start
+cd frontend && npm run dev
+```
+
+The frontend expects the backend at `http://localhost:3000/api`.
+
+---
+
 ## 🎯 Target Users
 
 - Small business owners
