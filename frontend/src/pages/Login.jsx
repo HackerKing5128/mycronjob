@@ -28,7 +28,7 @@ export default function Login({ onSwitch }) {
       <div>
         <p className="eyebrow">MyCronJob</p>
         <h2 className="auth-title">Login</h2>
-        <p className="auth-subtitle">Monitor uptime in loud, proud style.</p>
+        <p className="auth-subtitle">Sign in to view your dashboard.</p>
       </div>
 
       {error && <p className="form-error">{error}</p>}
@@ -47,20 +47,20 @@ export default function Login({ onSwitch }) {
           <span>Password</span>
           <input
             type="password"
-            placeholder="••••••••"
+            placeholder="Enter your password"
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
         </label>
 
         <button className="btn btn-primary" type="submit">
-          Login
+          Sign in
         </button>
       </form>
 
       <div className="switch-row">
-        <span>No account yet?</span>
-        <button className="btn btn-secondary" type="button" onClick={onSwitch}>
+        <span>Don't have an account?</span>
+        <button className="btn btn-ghost" type="button" onClick={onSwitch}>
           Register
         </button>
       </div>
